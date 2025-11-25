@@ -1,4 +1,4 @@
-# 📦 MQL5 Economic News Data Pipeline 2025
+# 📦 MQL5 Economic News Data Pipeline 2025(GCP)
 
 A production-ready, automated data ingestion, processing, model training, experiment tracking, and dashboard pipeline designed to work with **monthly economic release data** sourced from MQL5.
 
