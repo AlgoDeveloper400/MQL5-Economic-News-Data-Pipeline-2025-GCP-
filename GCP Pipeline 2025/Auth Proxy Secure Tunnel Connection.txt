@@ -1,0 +1,4 @@
+Run this command in the folder path where you have installed auth proxy, just type cd "path to auth proxy", then type in the following and hit enter:
+
+
+ .\cloud-sql-proxy.x64.exe "your db instance name on gcp" --credentials-file "path on your local machine where yourmysql service account is stored.json" --port 3307

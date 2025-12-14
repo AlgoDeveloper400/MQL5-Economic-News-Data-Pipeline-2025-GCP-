@@ -1,0 +1,16 @@
+{
+  "SEQ_LENGTH": 3,
+  "HIDDEN_SIZE": 64,
+  "NUM_LAYERS": 2,
+  "DROPOUT": 0.2,
+  "BATCH_SIZE": 64,
+  "EPOCHS": 1,
+  "LR": 0.001,
+  "WEIGHT_DECAY": 1e-4,
+  "XGB_N_ESTIMATORS": 100,
+  "XGB_MAX_DEPTH": 3,
+  "XGB_LEARNING_RATE": 0.1,
+  "description": "Model parameters for economic news ML pipeline",
+  "version": "1.0",
+  "last_updated": "2025-12-10 10:30:00"
+}
