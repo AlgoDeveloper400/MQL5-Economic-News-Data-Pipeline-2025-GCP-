@@ -8,7 +8,7 @@ For a complete understanding of how this pipeline works—including setup, usage
 Additionally, to see the pipeline in action and understand how to use it effectively, we recommend watching the **YouTube playlist** dedicated to this project.
 
 ## 📺 YouTube Playlist
-Watch the playlist here: [https://youtu.be/rkllzV07zQU?si=7idbQOEn75Ydpvjf]
+Watch the playlist here: https://youtu.be/rkllzV07zQU?si=7idbQOEn75Ydpvjf
 
 ## ℹ️ Repository Link
 You can access the repository here: [MQL5-Economic-News-Data-Pipeline-2025](https://github.com/AlgoDeveloper400/MQL5-Economic-News-Data-Pipeline-2025)
