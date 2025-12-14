@@ -192,3 +192,6 @@ This pipeline intentionally splits responsibilities to **optimize cost and contr
 - Optional cloud-based training mode
 - Live model performance monitoring
 - Automated alerting on metric degradation
+
+## 📺 YouTube Playlist
+Watch the playlist here: https://youtu.be/rkllzV07zQU?si=7idbQOEn75Ydpvjf
