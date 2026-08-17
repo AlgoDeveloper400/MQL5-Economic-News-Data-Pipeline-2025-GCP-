@@ -1,3 +1,19 @@
+# Problem Statement
+
+Running an ML pipeline entirely in the cloud is expensive, and running it entirely locally means no durable, shared storage that survives a wiped machine or supports multiple consumers of the same data. Fully managed orchestration services like Cloud Composer or a Kubernetes cluster solve the durability and scaling problem, but at a cost that's hard to justify for a pipeline that only needs to run once a month and doesn't need constant uptime.
+
+This project was built to solve that cost-versus-durability tradeoff directly. It's a hybrid pipeline that ingests monthly economic release data from MQL5, using GCP only for the parts that genuinely need to be durable and shared (Cloud Storage and Cloud SQL), while keeping orchestration, model training, validation, and experiment tracking local, where compute is already available and free. Specifically, it needed to:
+
+- Persist ingested economic data and downstream metrics somewhere durable and accessible, without paying for always-on managed compute
+- Run the monthly ingestion and training schedule via local Airflow instead of Cloud Composer, avoiding its per-environment cost
+- Connect securely from local infrastructure to Cloud SQL for both writing ingested data and reading it back for training
+- Keep the ML lifecycle (training, validation, testing) and experiment tracking (MLflow) local, since that's where the compute-heavy work happens anyway
+- Still produce dashboard-ready metrics and results, so the cost-optimized split doesn't come at the expense of visibility
+
+Everything below, from the ingestion flow through the local training loop and the hybrid cloud/local split, is the system built to solve that problem end to end.
+
+---
+
 # 📦 MQL5 Economic News Data Pipeline 2025 (GCP)
 
 A **production-ready, hybrid data & ML pipeline** designed to ingest **monthly economic release data from MQL5**, store it on Google Cloud, train and validate models locally, track experiments, and surface results on dashboards — all while **keeping cloud costs minimal**.
